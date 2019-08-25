@@ -63,3 +63,12 @@ void MainWindow::OnBye()
 }
 ```
 
+## Minimum-QuickLauncher启动器
+
+在windows右下角任务栏创建菜单，mac在右上角。
+
+[参考🔗](https://blog.csdn.net/zhuyunfei/article/details/51433822)
+
+主要用到QSystemTrayIcon，之后createActions()，createMenu()，就行了。
+
+在macOS上dock栏图标不会自动隐藏，[解决方法](https://stackoverflow.com/questions/4718668/qt-c-on-mac-how-do-i-hide-my-dock-icon)；在生成的build文件夹下，找到Info.plist，增加一对keyvalue就行了。
